@@ -1,0 +1,51 @@
+/*CSS reset settings here*/
+*  {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px solid pink;
+   }
+   #wrapper{
+    width: 950px;
+    margin: 20px;
+    height: 100%;
+    background-color: silver;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px 500px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "n n n m m m m m m m m m"
+   }
+   #header{
+    grid-area: h;
+    background-color: green;
+   }
+   #navigation{
+    grid-area: n;
+    background-color: blue;
+
+   }
+
+   .main_content{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 250px 250px;
+    background-color: red;
+    grid-template-areas: 
+        "s s s s s s s s s s s s"
+        "a a a a a a a a a a a a";
+   }
+
+   .main_content > div{
+    grid-area: s;
+    background-color: yellow;
+
+}
+   #advertisement{
+    grid-area: a;
+    background-color: purple;
+
+   }
+   
